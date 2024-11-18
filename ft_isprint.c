@@ -6,13 +6,13 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 12:13:03 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/14 10:36:49 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/18 19:59:27 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int c)
+int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
 		return (1);
