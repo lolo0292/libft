@@ -6,16 +6,11 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 16:07:07 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/15 10:55:34 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/15 18:04:49 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
-#include <strings.h>
 
 char	*ft_strchr(const char *s, int c)
 {

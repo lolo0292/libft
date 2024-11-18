@@ -6,14 +6,14 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 11:42:44 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/14 18:07:28 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/15 18:02:12 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 // copie de chaine de char en allouant de la mem dynamique
-char	*strdup(const char *s)
+char	*ft_strdup(const char *s)
 {
 	size_t	i;
 	char	*dest;

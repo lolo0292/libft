@@ -6,15 +6,11 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 10:30:07 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/14 17:22:31 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/15 18:05:15 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
 
 int	ft_atoi(const char *nptr)
 {

@@ -6,12 +6,11 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 13:05:40 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/14 17:23:31 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/15 18:04:39 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 size_t	ft_strlen(const char *s)
 {
