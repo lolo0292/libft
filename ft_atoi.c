@@ -6,7 +6,7 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 10:30:07 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/15 18:05:15 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/18 19:30:18 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,9 @@ int	ft_atoi(const char *nptr)
 	return (nbr * sign);
 }
 
-int	main(int argc, char **argv)
-{
-	(void)argc;
-	printf("%d", ft_atoi(argv[1]));
-	return (0);
-}
+// int	main(int argc, char **argv)
+// {
+// 	(void)argc;
+// 	printf("%d", ft_atoi(argv[1]));
+// 	return (0);
+// }

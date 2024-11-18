@@ -1,31 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/12 12:57:19 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/18 14:33:41 by lleichtn         ###   ########.fr       */
+/*   Created: 2024/11/18 17:32:30 by lleichtn          #+#    #+#             */
+/*   Updated: 2024/11/18 17:44:51 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// copie  n  octets de ZM src vers ZM dest
-void	*ft_memmove(void *dest, const void *src, size_t n)
+//write s with \n at the end
+void	ft_putendl_fd(char *s, int fd)
 {
-	if (!dest && !src)
-		return(NULL);
-	if (dest < src)
-		return (ft_memcpy(dest, src, n));
-	else
+	size_t	i;
+
+	i = 0;
+	if (!s)
+		return (NULL);
+	while (s[i])
 	{
-		while (n > 0)
-		{
-			*(unsigned char *)(dest + n - 1) = *(unsigned char *)(src + n - 1);
-			n--;
-		}
-		return (dest);
+		write(fd, &s[i], 1);
+		i++;
 	}
+	write (fd, "\n", 1);
 }

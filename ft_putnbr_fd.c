@@ -1,31 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/12 12:57:19 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/18 14:33:41 by lleichtn         ###   ########.fr       */
+/*   Created: 2024/11/18 17:47:17 by lleichtn          #+#    #+#             */
+/*   Updated: 2024/11/18 17:52:28 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// copie  n  octets de ZM src vers ZM dest
-void	*ft_memmove(void *dest, const void *src, size_t n)
+void	ft_putnbr_fd(int n, int fd)
 {
-	if (!dest && !src)
-		return(NULL);
-	if (dest < src)
-		return (ft_memcpy(dest, src, n));
+	if (n == -2147483648)
+	{
+		write(fd, "-2147483648", 11);
+		return ;
+	}
+	if (n < 0)
+	{
+		ft_putchar_fd('-', fd);
+		n = -n;
+	}
+	if (n >= 10)
+	{
+		ft_putnbr_fd(n / 10, fd);
+		ft_putnbr_fd(n % 10, fd);
+	}
 	else
 	{
-		while (n > 0)
-		{
-			*(unsigned char *)(dest + n - 1) = *(unsigned char *)(src + n - 1);
-			n--;
-		}
-		return (dest);
+		n = n + '0';
+		ft_putchar_fd(n, fd);
 	}
 }

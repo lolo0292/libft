@@ -6,21 +6,11 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 13:05:40 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/15 18:04:39 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/18 16:00:28 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-size_t	ft_strlen(const char *s)
-{
-	size_t	x;
-
-	x = 0;
-	while (s[x])
-		x++;
-	return (x);
-}
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t siz)
 {

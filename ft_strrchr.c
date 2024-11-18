@@ -6,7 +6,7 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 16:51:25 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/15 18:04:02 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/18 19:31:18 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,9 @@ char	*ft_strrchr(const char *s, int c)
 	return (NULL);
 }
 
-int	main(int argc, char **argv)
-{
-	(void)argc;
-	printf("%s", ft_strrchr(argv[1], argv[2][0]));
-	return (0);
-}
+// int	main(int argc, char **argv)
+// {
+// 	(void)argc;
+// 	printf("%s", ft_strrchr(argv[1], argv[2][0]));
+// 	return (0);
+// }
