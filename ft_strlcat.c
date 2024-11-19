@@ -6,21 +6,21 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 15:34:36 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/18 19:31:05 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/19 12:44:24 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// size_t	ft_strlen(const char *s)
-// {
-// 	size_t	i;
+size_t	ft_strlen(const char *s)
+{
+	size_t	i;
 
-// 	i = 0;
-// 	while (s[i])
-// 		i++;
-// 	return (i);
-// }
+	i = 0;
+	while (s[i])
+		i++;
+	return (i);
+}
 
 size_t	ft_strlcat(char *dst, const char *src, size_t siz)
 {
@@ -38,12 +38,12 @@ size_t	ft_strlcat(char *dst, const char *src, size_t siz)
 		j++;
 	}
 	dst[i] = '\0';
-	return (ft_strlen(src) + ft_strlen(dst));
+	return (ft_strlen(dst) + ft_strlen(&src[j]));
 }
 
-/*int main(int argc, char **argv)
-{
-	(void) argc;
-	printf("%d", ft_strlcat(argv[1], argv[2], atoi(argv[3])));
-	return (0);
-}*/
+// int main(int argc, char **argv)
+// {
+// 	(void) argc;
+// 	printf("%zu", ft_strlcat(argv[1], argv[2], atoi(argv[3])));
+// 	return (0);
+// }

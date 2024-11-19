@@ -6,7 +6,7 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 10:49:36 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/18 17:47:56 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/19 18:49:28 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,8 @@ typedef struct s_list t_list;
 
 struct s_list
 {
-
+	void *content;
+	struct s_list *next;
 };
 
 /* ************************************************************************** */
@@ -75,6 +76,9 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+
+void	ft_lstadd_front(t_list **lst, t_list *new);
+t_list	*ft_lstnew(void *content)
 
 /* ************************************************************************** */
 /* DEBUG                                                                      */

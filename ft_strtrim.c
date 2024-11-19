@@ -6,12 +6,12 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 10:11:54 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/18 11:54:40 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/19 17:11:11 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-// 
+
 // size_t	ft_strlcpy(char *dst, const char *src, size_t siz)
 // {
 // 	size_t	g;
@@ -76,7 +76,7 @@ char	 *ft_strtrim(char const *s1, char const *set)
 	z = ft_strlen(s1);
 	while (z > i && ft_strchr(set, s1[z - 1]))
 		z--;
-	trim = (char *)malloc(sizeof(char) * (z - i + 1));
+	trim = malloc(sizeof(char) * (z - i + 1));
 	if (!trim)
 		return (NULL);
 	
