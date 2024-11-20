@@ -6,18 +6,17 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 16:07:07 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/18 11:02:40 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/20 20:05:52 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 // Search for c in S
 char	*ft_strchr(const char *s, int c)
 {
 	int	i;
 
-	if (!s)
-		return (NULL);
 	i = 0;
 	while (s[i])
 	{
@@ -30,4 +29,3 @@ char	*ft_strchr(const char *s, int c)
 	else
 		return (NULL);
 }
-

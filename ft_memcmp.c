@@ -6,7 +6,7 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 13:39:12 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/18 18:35:23 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/20 15:47:54 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 //     (void) argc;
 //     int	ptr1;
 //     int	ptr2;
-    
+
 //     ptr1 = ft_memcmp(argv[1], argv[2], atoi(argv[3]));
 //     ptr2 = memcmp(argv[1], argv[2], atoi(argv[3]));
 //     printf("your %d \n", ptr1);

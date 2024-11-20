@@ -6,16 +6,17 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 16:24:31 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/18 19:30:53 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/20 15:52:36 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 // apply fct f to the string s
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	unsigned int i;
-	
+	unsigned int	i;
+
 	if (!s || !f)
 		return ;
 	i = 0;

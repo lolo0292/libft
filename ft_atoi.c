@@ -6,7 +6,7 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 10:30:07 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/18 19:30:18 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/20 20:11:17 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_atoi(const char *nptr)
 	i = 0;
 	sign = 1;
 	nbr = 0;
-	while (nptr[i] <= 32)
+	while (nptr[i] == ' ' || (nptr[i] >= '\t' && nptr[i] <= '\r'))
 		i++;
 	if (nptr[i] == '+')
 		i++;

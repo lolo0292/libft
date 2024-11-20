@@ -6,7 +6,7 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 10:11:54 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/19 17:11:11 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/20 15:49:13 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,16 +60,15 @@
 // 	return (x);
 // }
 
-//delete car define by set before and after string
-char	 *ft_strtrim(char const *s1, char const *set)
+// delete car define by set before and after string
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	size_t i;
-	size_t z;
-	char *trim;
+	size_t	i;
+	size_t	z;
+	char	*trim;
 
 	if (!s1 || !set)
-		return(NULL);
-	
+		return (NULL);
 	i = 0;
 	while (s1[i] && ft_strchr(set, s1[i]))
 		i++;
@@ -79,9 +78,7 @@ char	 *ft_strtrim(char const *s1, char const *set)
 	trim = malloc(sizeof(char) * (z - i + 1));
 	if (!trim)
 		return (NULL);
-	
 	ft_strlcpy(trim, &s1[i], z - i + 1);
-
 	return (trim);
 }
 

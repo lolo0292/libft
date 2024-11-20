@@ -6,7 +6,7 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 13:05:40 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/18 16:00:28 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/20 21:25:29 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t siz)
 	size_t	g;
 
 	g = 0;
-	if (!dst || !src)
-		return (0);
 	if (siz > 0)
 	{
 		while (src[g] && g < (siz - 1))
@@ -30,3 +28,20 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t siz)
 	}
 	return (ft_strlen(src));
 }
+
+// size_t	ft_strlen(const char *s)
+// {
+// 	size_t	i;
+
+// 	i = 0;
+// 	while (s[i])
+// 		i++;
+// 	return (i);
+// }
+
+// int main(int argc, char **argv)
+// {
+// 	(void) argc;
+// 	printf("%zu", ft_strlcpy(argv[1], NULL, 10));
+// 	return (0);
+// }

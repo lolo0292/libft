@@ -6,7 +6,7 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 18:45:53 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/19 18:56:27 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/20 15:50:38 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,8 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	l
+	if (!lst || !new)
+		return ;
+	new->next = *lst;
+	*lst = new;
 }

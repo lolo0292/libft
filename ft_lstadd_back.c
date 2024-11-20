@@ -1,37 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/18 17:47:17 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/20 15:51:57 by lleichtn         ###   ########.fr       */
+/*   Created: 2024/11/20 14:38:14 by lleichtn          #+#    #+#             */
+/*   Updated: 2024/11/20 15:55:39 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr_fd(int n, int fd)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	if (n == -2147483648)
+	t_list	*z;
+
+	if (!lst || !new)
+		return ;
+	if (*lst == NULL)
 	{
-		write(fd, "-2147483648", 11);
+		*lst = new;
 		return ;
 	}
-	if (n < 0)
-	{
-		ft_putchar_fd('-', fd);
-		n = -n;
-	}
-	if (n >= 10)
-	{
-		ft_putnbr_fd(n / 10, fd);
-		ft_putnbr_fd(n % 10, fd);
-	}
-	else
-	{
-		n = n + '0';
-		ft_putchar_fd(n, fd);
-	}
+	z = ft_lstlast(*lst);
+	z->next = new;
 }

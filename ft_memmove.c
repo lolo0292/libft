@@ -6,7 +6,7 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 12:57:19 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/18 14:33:41 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/20 15:50:49 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	if (!dest && !src)
-		return(NULL);
+		return (NULL);
 	if (dest < src)
 		return (ft_memcpy(dest, src, n));
 	else

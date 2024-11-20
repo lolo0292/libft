@@ -6,7 +6,7 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 12:14:50 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/18 19:48:18 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/20 15:57:46 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 size_t	ft_strlen(const char *s)
 {
-	size_t x;
+	size_t	x;
 
 	x = 0;
 	while (s[x])
