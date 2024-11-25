@@ -13,23 +13,32 @@
 #include "libft.h"
 
 // cree une chaine ds str depuis la chaine s de taille len
-char	*ft_substr(char const *s, unsigned int start, size_t len)
-{
-	size_t	s_len;
-	char	*ptr;
+#include <stdlib.h>
+#include <string.h>
 
-	if (!s)
-		return (NULL);
-	s_len = ft_strlen(s);
-	if (start >= s_len)
-		return (ft_strdup(""));
-	if (len > s_len - start)
-		len = s_len - start;
-	ptr = malloc(sizeof(char) * (len + 1));
-	if (!ptr)
-		return (NULL);
-	ft_strlcpy(ptr, s + start, len + 1);
-	return (ptr);
+char *ft_substr(char const *s, unsigned int start, size_t len) {
+    size_t i = 0;
+    size_t j = 0;
+    char *s2;
+
+    if (!s)
+        return (NULL);
+
+    size_t s_len = strlen(s);
+    if (start >= s_len)
+        len = 0;
+    if (start + len > s_len)
+        len = s_len - start;
+
+    s2 = malloc(sizeof(char) * (len + 1));
+    if (!s2)
+        return (NULL);
+
+    while (i < len && s[start])
+        s2[j++] = s[start++];
+    s2[j] = '\0';
+
+    return (s2);
 }
 
 // int	main(int argc, char **argv)
