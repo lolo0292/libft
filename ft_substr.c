@@ -12,10 +12,6 @@
 
 #include "libft.h"
 
-// cree une chaine ds str depuis la chaine s de taille len
-#include <stdlib.h>
-#include <string.h>
-
 char *ft_substr(char const *s, unsigned int start, size_t len) {
     size_t i = 0;
     size_t j = 0;
