@@ -6,12 +6,13 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 18:45:53 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/20 15:50:38 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/25 14:41:49 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// add new at the start of the lst
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	if (!lst || !new)

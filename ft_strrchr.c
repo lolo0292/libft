@@ -6,12 +6,13 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 16:51:25 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/18 19:31:18 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/25 15:00:52 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// search for last c in s
 char	*ft_strrchr(const char *s, int c)
 {
 	int	i;

@@ -6,12 +6,12 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 10:30:07 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/20 20:11:17 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/25 12:01:17 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+// Converts ascii to integer
 int	ft_atoi(const char *nptr)
 {
 	int		i;

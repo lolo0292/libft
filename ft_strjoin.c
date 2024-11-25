@@ -6,7 +6,7 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 15:54:28 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/19 13:37:04 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/21 10:56:45 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 // {
 // 	char *nul = NULL;
 // 	if (ac != 3)
-// 		return (printf("nique ta mere\n"));
+// 		return (printf("mm\n"));
 // 	printf("s1 = %s\n", av[1]);
 // 	printf("s2 = %s\n", av[2]);
 // 	char *str = ft_strjoin(av[1], nul);

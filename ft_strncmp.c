@@ -6,12 +6,13 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 18:11:00 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/20 20:15:11 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/25 14:59:34 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// compare s1 nds2 on the first n char
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;

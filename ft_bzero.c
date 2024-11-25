@@ -6,13 +6,13 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 12:45:35 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/20 15:57:15 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/25 12:00:23 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// inialise un bloc memoire en mettant des 0
+// Init memory block with 0
 void	ft_bzero(void *s, size_t n)
 {
 	size_t	i;

@@ -6,12 +6,13 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 16:44:07 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/20 20:13:49 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/25 14:59:15 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+//apply f to each char of s
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char			*ptr;

@@ -6,12 +6,13 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 14:46:45 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/20 15:57:24 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/25 14:45:03 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// free mem of past elem
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
 	if (!lst || !del)

@@ -6,12 +6,13 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 11:39:03 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/14 11:40:58 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/25 15:01:20 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// pass upper to lower case
 int	ft_tolower(int c)
 {
 	if (c >= 65 && c <= 90)

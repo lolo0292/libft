@@ -6,12 +6,13 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 17:19:24 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/20 15:51:46 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/25 14:55:04 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// write char on the fd given
 void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);

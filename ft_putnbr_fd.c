@@ -6,12 +6,13 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 17:47:17 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/20 15:51:57 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/25 14:55:38 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// write int n on the fd given
 void	ft_putnbr_fd(int n, int fd)
 {
 	if (n == -2147483648)

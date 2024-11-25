@@ -6,12 +6,13 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 13:05:40 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/20 21:25:29 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/25 14:58:14 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// copy str from src to dest with size max
 size_t	ft_strlcpy(char *dst, const char *src, size_t siz)
 {
 	size_t	g;

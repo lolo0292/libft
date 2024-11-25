@@ -6,17 +6,18 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 14:38:14 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/20 15:55:39 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/25 14:41:30 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// add new at the end of the lst
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*z;
 
-	if (!lst || !new)
+	if (!new)
 		return ;
 	if (*lst == NULL)
 	{

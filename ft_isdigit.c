@@ -6,12 +6,13 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 12:01:47 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/20 15:51:25 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/25 12:02:53 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// checks if it is numerical
 int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')

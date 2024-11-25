@@ -6,7 +6,7 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 15:34:36 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/20 20:05:18 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/25 14:57:19 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@
 // 	return (i);
 // }
 
+//concatenate string
 size_t	ft_strlcat(char *dst, const char *src, size_t siz)
 {
 	size_t	i;

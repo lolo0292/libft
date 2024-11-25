@@ -6,7 +6,7 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 18:10:01 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/20 15:43:43 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/25 14:49:59 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ static int	ft_strlena(int nb)
 	return (len);
 }
 
+// From integer to ascii
 char	*ft_itoa(int nb)
 {
 	char	*res;
@@ -62,3 +63,12 @@ char	*ft_itoa(int nb)
 	}
 	return (res);
 }
+
+// int main(void)
+// {
+//     char *tmp;
+//     tmp = ft_itoa(123456);
+//     printf("%s", tmp);
+//     free(tmp);
+//     return (0);
+// }

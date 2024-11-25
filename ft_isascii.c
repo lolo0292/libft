@@ -6,12 +6,13 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 12:08:39 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/20 15:51:27 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/25 12:02:42 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// checks if it is ascii
 int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)

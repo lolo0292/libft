@@ -6,12 +6,13 @@
 /*   By: lleichtn <lleichtn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 16:55:02 by lleichtn          #+#    #+#             */
-/*   Updated: 2024/11/20 15:53:12 by lleichtn         ###   ########.fr       */
+/*   Updated: 2024/11/25 14:46:40 by lleichtn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// init var content and next
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*r;
